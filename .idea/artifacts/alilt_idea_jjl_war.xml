@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="war" name="alilt-idea-jjl:war">
+    <output-path>$PROJECT_DIR$/target</output-path>
+    <root id="archive" name="alilt-idea-jjl.war">
+      <element id="artifact" artifact-name="alilt-idea-jjl:war exploded" />
+    </root>
+  </artifact>
+</component>

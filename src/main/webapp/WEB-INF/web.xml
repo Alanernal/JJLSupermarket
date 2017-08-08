@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!--<!DOCTYPE web-app PUBLIC-->
+<!--"-//Sun Microsystems, Inc.//DTD Web Application 2.3//EN"-->
+<!--"http://java.sun.com/dtd/web-app_2_3.dtd" >-->
+
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://xmlns.jcp.org/xml/ns/javaee" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd" id="WebApp_ID" version="3.1">
+  <display-name>JJLSupermarket</display-name>
+  <servlet>
+    <servlet-name>UserServlet</servlet-name>
+    <servlet-class>net.alily.servlet.UserServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>UserServlet</servlet-name>
+    <url-pattern>/userServlet</url-pattern>
+  </servlet-mapping>
+
+  <servlet>
+    <servlet-name>AdminServlet</servlet-name>
+    <servlet-class>net.alily.servlet.AdminServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>AdminServlet</servlet-name>
+    <url-pattern>/adminServlet</url-pattern>
+  </servlet-mapping>
+
+  <!--<servlet>-->
+    <!--<servlet-name>UserLoginServlet</servlet-name>-->
+    <!--<servlet-class>net.alily.servlet.UserLoginServlet</servlet-class>-->
+  <!--</servlet>-->
+  <!--<servlet-mapping>-->
+    <!--<servlet-name>UserLoginServlet</servlet-name>-->
+    <!--<url-pattern>/UserLogin</url-pattern>-->
+  <!--</servlet-mapping>-->
+
+  <!--<servlet>-->
+    <!--<servlet-name>UserInfoManageServlet</servlet-name>-->
+    <!--<servlet-class>net.alily.servlet.UserInfoManageServlet</servlet-class>-->
+  <!--</servlet>-->
+  <!--<servlet-mapping>-->
+    <!--<servlet-name>UserInfoManageServlet</servlet-name>-->
+    <!--<url-pattern>/UserInfoManage</url-pattern>-->
+  <!--</servlet-mapping>-->
+
+  <!--<servlet>-->
+    <!--<servlet-name>AdminIndexServlet</servlet-name>-->
+    <!--<servlet-class>net.alily.servlet.AdminIndexServlet</servlet-class>-->
+  <!--</servlet>-->
+  <!--<servlet>-->
+    <!--<servlet-name>AdminLoginServlet</servlet-name>-->
+    <!--<servlet-class>net.alily.servlet.AdminLoginServlet</servlet-class>-->
+  <!--</servlet>-->
+
+  <!--<servlet-mapping>-->
+    <!--<servlet-name>AdminIndexServlet</servlet-name>-->
+    <!--<url-pattern>/AdminIndex</url-pattern>-->
+  <!--</servlet-mapping>-->
+  <!--<servlet-mapping>-->
+    <!--<servlet-name>AdminLoginServlet</servlet-name>-->
+    <!--<url-pattern>/AdminLogin</url-pattern>-->
+  <!--</servlet-mapping>-->
+
+  <welcome-file-list>
+    <welcome-file>login.jsp</welcome-file>
+  </welcome-file-list>
+
+  <filter>
+    <filter-name>encoding</filter-name>
+    <filter-class>net.alily.filter.EncodingFilter</filter-class>
+  </filter>
+  <filter-mapping>
+    <filter-name>encoding</filter-name>
+    <url-pattern>/*</url-pattern>
+  </filter-mapping>
+  <filter>
+    <filter-name>Browser</filter-name>
+    <filter-class>net.alily.filter.BrowserFilter</filter-class>
+  </filter>
+  <filter-mapping>
+    <filter-name>Browser</filter-name>
+    <url-pattern>/*</url-pattern>
+  </filter-mapping>
+
+</web-app>

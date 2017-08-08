@@ -1,0 +1,4 @@
+[ERROR] [2017-05-27 18:12:12][net.alily.dao.impl.AdminDaoImpl]Query stocking shelves Exception: java.lang.NullPointerException
+  [ERROR] [2017-05-27 19:01:29][net.alily.dao.impl.AdminDaoImpl]Query stocking shelves Exception: java.sql.SQLException: No such column :commodityType
+  [ERROR] [2017-05-27 19:06:07][net.alily.dao.impl.AdminDaoImpl]Query stocking shelves Exception: java.sql.SQLException: No such column :commodityType
+  
